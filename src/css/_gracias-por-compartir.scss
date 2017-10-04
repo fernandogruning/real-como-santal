@@ -1,0 +1,108 @@
+.gracias-por-compartir {
+	.wrapper {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.close-button {
+		position: absolute;
+		align-self: flex-start;
+		margin-top: 62px * $ratio;
+		margin-left: 65px * $ratio;
+		width: 109px * $ratio;
+		height: 109px * $ratio;
+		border-radius: 50%;
+		background: #fff;
+	}
+
+	.mango-and-bg {
+		margin-top: 50px * $ratio;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 460px * $ratio;
+		height: 460px * $ratio;
+		background: $brand-color;
+		border-radius: 50%;
+
+		.branch-window-alt {
+			position: absolute;
+			top: -25px * $ratio;
+		}
+
+		.mango-juice {
+			position: absolute;
+			top: 105px * $ratio;
+		}
+	}
+
+	h1 {
+		margin-top: 85px * $ratio;
+		width: 340px * $ratio;
+		font-family: 'Bebas Neue', sans-serif;
+		font-size: 86.83px * $ratio;
+		line-height: 70.88px * $ratio;
+		text-align: center;
+		color: #fff;
+		text-shadow: 11px * $ratio 18px * $ratio 21px * $ratio rgba(0, 0, 0, 0.75);
+	}
+
+	.info-box {
+		margin-top: 45px * $ratio;
+		display: block;
+		width: 823px * $ratio;
+		height: 649px * $ratio;
+		background: rgba(37,50,91, 0.20);
+		border-radius: 48px * $ratio;
+		text-align: center;
+		padding: 42px * $ratio 60px * $ratio 0 60px * $ratio;
+		font-family: 'Raleway', sans-serif;
+		color: #fff;
+
+		h3 {
+			font-weight: 900;
+			font-size: 41.48px * $ratio;
+			color: $brand-color;
+			margin-bottom: 36px * $ratio;
+		}
+
+		p {
+			font-weight: 500;
+			font-size: 41.48px * $ratio;
+			line-height: 40.95px * $ratio;
+		}
+
+		& > h2 {
+			font-weight: 900;
+			font-size: 55.3px * $ratio;
+			color: $brand-color;
+			margin-bottom: 64px * $ratio;
+		}
+
+		h6 {
+			font-size: 33.28px * $ratio;
+			line-height: 37.58px * $ratio;
+		}
+
+		.social-media {
+			margin-top: 28px * $ratio;
+			display: flex;
+			justify-content: center;
+
+			a {
+				margin-right: 22px * $ratio;
+
+				&:nth-child(2) {
+					margin-right: 28px * $ratio;
+				}
+			}
+
+			h2 {
+				font-family: 'Gotham Black';
+				font-size: 50.15px * $ratio;
+				color: $brand-color;
+			}
+		}
+	}
+}

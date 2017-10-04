@@ -1,0 +1,54 @@
+.welcome-3 {
+	.wrapper {
+		position: relative;
+		background-image: url('../img/fruit-group.png'), url('../img/background.jpg');
+		background-size: contain, 100% 100%;
+		background-position: center bottom, top center;
+		background-repeat: no-repeat, no-repeat;
+
+		flex-direction: column;
+	}
+
+	.real-como-santal {
+		position: absolute;
+		top: 70px * $ratio;
+		margin: auto;
+	}
+
+	.selecciona-tu-filtro {
+		display: flex;
+		height: 318px * $ratio;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-content: stretch;
+
+		h1 {
+			width: 392px * $ratio;
+			height: 179px * $ratio;
+			font-family: 'Bebas Neue', sans-serif;
+			font-size: 106.42px * $ratio;
+			line-height: 92.88px * $ratio;
+			color: #fff;
+			text-transform: uppercase;
+			text-shadow: (11px * $ratio) (18px * $ratio) (21px * $ratio) rgba(0, 0, 0, 0.75);
+
+			align-self: center;
+
+			margin-right: 32px * $ratio;
+			text-align-last: right;
+		}
+	}
+
+	.image-icon-branch {
+		display: block;
+		margin-top: -9px * $ratio;
+	}
+
+	.apple-juice {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+
+}

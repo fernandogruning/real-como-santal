@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Real como Santal</title>
+		<link rel="stylesheet" href="./css/main.css">
+	</head>
+	<body class="ingresa-tus-datos">
+		<div class="wrapper">
+			<a href="edad.html" class="back-button"><img src="img/back-button.png" alt=""></a>
+			<a href="welcome-1.html" class="close-button"><img src="img/close-button.png" alt=""></a>
+			<img class="santal-logo" src="img/santal-logo.png">
+
+			<h1>Ingresa tus datos</h1>
+
+			<form class="info-form" action="">
+				<div class="control">
+					<label class="email-input-icon" for="email-input"></label>
+					<input id="email-input" type="email" placeholder="email" required>
+				</div>
+				<div class="control">
+					<label class="name-input-icon" for="name-input"></label>
+					<input id="name-input" type="text" placeholder="nombre" required>
+				</div>
+				<div class="control">
+					<label class="id-input-icon" for="id-input"></label>
+					<input id="id-input" type="number" placeholder="c&eacute;dula de identidad" required>
+				</div>
+				<div class="terms-and-conditions-control">
+					<input id="terms-and-conditions-input" type="checkbox"><label for="terms-and-conditions-input"><span></span><div>Al registrarse, acepta los <a href="terminos-y-condiciones.html">términos y condiciones</a> de Santal y sus políticas de privacidad</div></label>
+				</div>
+				<input class="submit-input" id="submit-input" type="submit" value="Registrarse">
+			</form>
+		</div>
+		
+		<script>
+			const inputs = document.querySelectorAll(".control input");
+
+			const isNotEmpty = (elem) => {
+				if (elem.value !== '') {
+					return true;
+				}
+			}
+
+			inputs.forEach( listObj => {	
+				listObj.onkeyup = function(e) {
+					listObj.classList.toggle('is-active', isNotEmpty(listObj));
+				}
+			});
+
+		</script>
+
+		<!-- SOLO PARA FINES DE DEMO -->
+		<script>
+			const submitInput = document.querySelector(".submit-input");
+
+			submitInput.onclick = (e) => {
+				e.preventDefault();
+				window.location.assign('seleccionar-categoria.html');
+			}
+		</script>
+	</body>
+</html>

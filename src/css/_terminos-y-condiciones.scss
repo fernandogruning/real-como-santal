@@ -1,0 +1,45 @@
+.terminos-y-condiciones {
+	.wrapper {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.back-button {
+		position: absolute;
+		align-self: flex-start;
+		margin-top: 62px * $ratio;
+		margin-left: 65px * $ratio;
+		width: 109px * $ratio;
+		height: 109px * $ratio;
+		border-radius: 50%;
+		background: #fff;
+	}
+
+	.santal-logo {
+		margin-top: 61px * $ratio;
+	}
+
+	h1 {
+		margin-top: 121px * $ratio;
+		margin-bottom: 37.73px * $ratio;
+		width: 319px * $ratio;
+		font-family: 'Bebas Neue', sans-serif;
+		font-size: 82px * $ratio;
+		line-height: 70.88px * $ratio;
+		text-align: center;
+		color: #fff;
+		text-shadow: 11px * $ratio 18px * $ratio 21px * $ratio rgba(0, 0, 0, 0.75);
+	}
+
+	p {
+		width: 784px * $ratio;
+		font-family: 'Raleway';
+		font-weight: 600;
+		font-size: 25.91px * $ratio;
+		line-height: 27.27px * $ratio;
+		color: #001f5b;
+		text-align: justify;
+		text-align-last: left;
+		margin-top: 27.27px * $ratio;
+	}
+}

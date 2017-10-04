@@ -1,0 +1,40 @@
+.camera {
+	.wrapper {
+		position: relative;
+		background-image: url('../img/background.jpg');
+		background-size: 100% 100%;
+		background-position: top center;
+		background-repeat: no-repeat;
+
+		flex-direction: column;
+		justify-content: flex-start;
+
+	}
+
+	.back-button {
+		position: absolute;
+		align-self: flex-start;
+		margin-top: 62px * $ratio;
+		margin-left: 65px * $ratio;
+		width: 109px * $ratio;
+		height: 109px * $ratio;
+		border-radius: 50%;
+		background: #fff;
+	}
+
+	.close-button {
+		position: absolute;
+		align-self: flex-start;
+		margin-top: 200px * $ratio;
+		margin-left: 65px * $ratio;
+		width: 109px * $ratio;
+		height: 109px * $ratio;
+		border-radius: 50%;
+		background: #fff;
+	}
+
+	.real-como-santal {
+		margin-top: 90px * $ratio;
+	}
+
+}

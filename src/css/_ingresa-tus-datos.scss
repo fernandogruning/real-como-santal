@@ -1,0 +1,176 @@
+.ingresa-tus-datos {
+	* {
+		box-sizing: border-box;
+	}
+	.wrapper {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.back-button {
+		position: absolute;
+		align-self: flex-start;
+		margin-top: 62px * $ratio;
+		margin-left: 65px * $ratio;
+		width: 109px * $ratio;
+		height: 109px * $ratio;
+		border-radius: 50%;
+		background: #fff;
+	}
+
+	.close-button {
+		position: absolute;
+		align-self: flex-start;
+		margin-top: 200px * $ratio;
+		margin-left: 65px * $ratio;
+		width: 109px * $ratio;
+		height: 109px * $ratio;
+		border-radius: 50%;
+		background: #fff;
+	}
+
+	.santal-logo {
+		margin-top: 61px * $ratio;
+	}
+
+	h1 {
+		margin-top: 145px * $ratio;
+		margin-bottom: 46px * $ratio;
+		width: 466px * $ratio;
+		font-family: 'Bebas Neue';
+		font-weight: normal;
+		font-size: 145.35px * $ratio;
+		color: #fff;
+		text-align: center;
+		text-shadow: 11px * $ratio 18px * $ratio 21px * $ratio rgba(0, 0, 0, 0.75);
+	}
+
+	.info-form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.control {
+			position: relative;
+
+			@each $field in name, email, id {
+				.#{$field}-input-icon {
+					background-image: url('../img/#{$field}-input-icon.png');
+					background-repeat: no-repeat;
+				}
+			}
+
+			label {
+				position: absolute;
+				top: 24px * $ratio;
+				left: 36px * $ratio;
+				width: 39px * $ratio;
+				height: 39px * $ratio;
+			}
+
+			input {
+				display: block;
+				background-color: rgba(#eceded,0.70);
+				width: 503px * $ratio;
+				height: 92px * $ratio;
+				padding: 24px * $ratio 39px * $ratio 24px * $ratio 117px * $ratio;
+				margin-bottom: 64px * $ratio;
+				background-color: rgba(#eceded,0.70);
+				border: 2.6px * $ratio solid $brand-color;
+				border-radius: 24px * $ratio;
+				font-family: 'Avenir', sans-serif;
+				font-weight: 900;
+				font-size: 34.87px * $ratio;
+				line-height: 39px * $ratio;
+				color: $brand-color;
+
+
+				&::-webkit-inner-spin-button {
+					-webkit-appearance: none;
+					margin: 0;
+				}
+
+				&::placeholder {
+					color: $brand-color;
+				}
+			}
+
+			.is-active {
+				background: $brand-color;
+				color: #fff;
+			}
+		}
+
+		.terms-and-conditions-control {
+			width: 669px * $ratio;
+			margin-bottom: 63px * $ratio;
+
+			input {
+				display: none;
+			}
+
+			label {
+				display: block;
+				font-family: 'Raleway';
+				font-weight: 500;
+				font-size: 25.91px * $ratio;
+				line-height: 27.27px * $ratio;
+				text-align: justify;
+				text-align-last: left;
+				color: $brand-color;
+
+				div {
+					margin-left: 65px * $ratio + 40px * $ratio;
+					width: 486px * $ratio;
+				}
+
+				a {
+					font-weight: 800;
+					text-decoration: none;
+					color: $brand-color;
+				}
+			}
+
+			span {
+				display:inline-block;
+				float: left;
+				width:55px * $ratio;
+				height:55px * $ratio;
+				margin:-2px * $ratio 10px * $ratio 0 0;
+				vertical-align:middle;
+				background:url('../img/checkbox.png') left top no-repeat;
+				cursor:pointer;
+			}
+
+			input[type="checkbox"]:checked + label span {
+				background:url('../img/checkbox-checked.png') left top no-repeat;
+			}
+		}
+
+		.submit-input {
+			display: block;
+			background-color: rgba(#eceded,0.70);
+			width: 503px * $ratio;
+			height: 92px * $ratio;
+			padding: 30px * $ratio auto 30px * $ratio auto;
+			margin-bottom: 64px * $ratio;
+			background-color: transparent;
+			border: 2.6px * $ratio solid $brand-color;
+			border-radius: 24px * $ratio;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 900;
+			font-size: 42.27px * $ratio;
+			line-height: 45.88px * $ratio;
+			color: #fff;
+			text-align: center;
+			text-transform: uppercase;
+			cursor: pointer;
+
+			&:hover {
+				background-color: $brand-color-alt;
+				color: #fff;
+				border-color: $brand-color-alt;
+			}
+		}
+	}
+}

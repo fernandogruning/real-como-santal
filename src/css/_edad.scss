@@ -1,0 +1,116 @@
+.edad {
+	.wrapper {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.back-button {
+		position: absolute;
+		align-self: flex-start;
+		margin-top: 62px * $ratio;
+		margin-left: 65px * $ratio;
+		width: 109px * $ratio;
+		height: 109px * $ratio;
+		border-radius: 50%;
+		background: #fff;
+	}
+
+	.close-button {
+		position: absolute;
+		align-self: flex-start;
+		margin-top: 200px * $ratio;
+		margin-left: 65px * $ratio;
+		width: 109px * $ratio;
+		height: 109px * $ratio;
+		border-radius: 50%;
+		background: #fff;
+	}
+
+	.santal-logo {
+		margin-top: 61px * $ratio;
+	}
+
+	h1 {
+		margin-top: 145px * $ratio;
+		margin-bottom: 46px * $ratio;
+		width: 416px * $ratio;
+		font-family: 'Bebas Neue';
+		font-weight: normal;
+		font-size: 145.35px * $ratio;
+		color: #fff;
+		text-align: center;
+		text-shadow: (11px * $ratio) (18px * $ratio) 21px * $ratio rgba(0, 0, 0, 0.75);
+	}
+
+	h5 {
+		margin-bottom: 102px * $ratio;
+		font-family: 'Raleway';
+		font-weight: 900;
+		font-size: 34.53px * $ratio;
+		color: #fff;
+		text-align: center;
+		text-shadow: (11px * $ratio) (18px * $ratio) (21px * $ratio) rgba(0, 0, 0, 0.75);
+	}
+
+	.number-form {
+		margin-bottom: 200px * $ratio;
+
+		input {
+			width: 209px * $ratio;
+			height: 201px * $ratio;
+			padding: 0;
+			background-color: rgba(#eceded,0.70);
+			border: 2.6px * $ratio solid $brand-color;
+			border-radius: 24px * $ratio;
+			font-family: 'Avenir', sans-serif;
+			font-weight: 900;
+			font-size: 140px * $ratio;
+			color: $brand-color;
+			text-align: center;
+
+			&::-webkit-inner-spin-button {
+				-webkit-appearance: none;
+				margin: 0;
+			}
+
+			&:focus {
+				&::-webkit-input-placeholder {
+					opacity: 0;
+				}
+			}
+
+			&::-webkit-input-placeholder {
+				color: $brand-color;
+			}
+		}
+
+		.is-active {
+			background: $brand-color;
+			color: #fff;
+		}
+	}
+
+	.ingresar-form input {
+		display: block;
+		padding: 0;
+		border: 2.6px * $ratio solid $brand-color;
+		border-radius: 24px * $ratio * 1.5;
+		width: 503px * $ratio;
+		height: 92px * $ratio;
+		background: $brand-color;
+		font-family: 'Raleway';
+		font-weight: 900;
+		font-size: 42.27px * $ratio;
+		line-height: 46px * $ratio;
+		text-align: center;
+		text-transform: uppercase;
+		color: #fff;
+		cursor: pointer;
+
+		&:hover {
+			background-color: $brand-color-alt;
+			color: #fff;
+			border-color: $brand-color-alt;
+		}
+	}
+}

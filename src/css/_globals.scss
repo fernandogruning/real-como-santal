@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:500,600,900');
+
+$width: 900px;
+$height: 1600px;
+
+$ratio: 0.8333;
+
+$brand-color: #25325b;
+$brand-color-alt: #86c03f;
+
+.wrapper {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	width: $width;
+	min-height: $height;
+	background-image: url('../img/background.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: top center;
+	// background-color: #86cdc5;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

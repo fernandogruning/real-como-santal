@@ -1,0 +1,37 @@
+.welcome-1 {
+	.wrapper {
+		position: relative;
+		background-image: url('../img/juice-group.png'), url('../img/background.jpg');
+		background-size: contain, 100% 100%;
+		background-position: center bottom, top center;
+		background-repeat: no-repeat, no-repeat;
+
+		.comparte-tu-experiencia {
+			// border: 1px * $ratio solid;
+			position: absolute;
+			top: 85px * $ratio;
+			left: 50px * $ratio;
+			display: flex;
+			height: 318px * $ratio;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+			align-content: stretch;
+		
+			h1 {
+				width: 446px * $ratio;
+				height: 174px * $ratio;
+				font-family: 'Bebas Neue', sans-serif;
+				font-size: 106.42px * $ratio;
+				line-height: 86.88px * $ratio;
+				color: #fff;
+				text-transform: uppercase;
+			text-shadow: (11px * $ratio) (18px * $ratio) (21px * $ratio) rgba(0, 0, 0, 0.75);
+
+				align-self: center;
+
+				margin-left: 32px * $ratio;
+			}
+		}
+	}
+}

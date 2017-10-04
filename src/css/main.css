@@ -1,0 +1,779 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Raleway:500,600,900");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/AvenirLT-Black.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("../fonts/BebasNeue.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Gotham Black';
+  src: url("../fonts/Gotham Black Regular.ttf") format("truetype"); }
+
+.wrapper {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 900px;
+  min-height: 1600px;
+  background-image: url("../img/background.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.jungle-window {
+  display: block;
+  margin: auto;
+  position: absolute;
+  z-index: 1;
+  width: 878.26087px;
+  height: auto; }
+
+.santal-juice {
+  display: block;
+  margin: auto;
+  z-index: 2; }
+
+.welcome-1 .wrapper {
+  position: relative;
+  background-image: url("../img/juice-group.png"), url("../img/background.jpg");
+  background-size: contain, 100% 100%;
+  background-position: center bottom, top center;
+  background-repeat: no-repeat, no-repeat; }
+  .welcome-1 .wrapper .comparte-tu-experiencia {
+    position: absolute;
+    top: 70.8305px;
+    left: 41.665px;
+    display: flex;
+    height: 264.9894px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch; }
+    .welcome-1 .wrapper .comparte-tu-experiencia h1 {
+      width: 371.6518px;
+      height: 144.9942px;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 88.67979px;
+      line-height: 72.3971px;
+      color: #fff;
+      text-transform: uppercase;
+      text-shadow: 9.1663px 14.9994px 17.4993px rgba(0, 0, 0, 0.75);
+      align-self: center;
+      margin-left: 26.6656px; }
+
+.welcome-2 .wrapper {
+  position: relative;
+  background-image: url("../img/fruit-group.png"), url("../img/background.jpg");
+  background-size: contain, 100% 100%;
+  background-position: center bottom, top center;
+  background-repeat: no-repeat, no-repeat;
+  flex-direction: column; }
+
+.welcome-2 .real-como-santal {
+  position: absolute;
+  top: 58.331px;
+  margin: auto; }
+
+.welcome-2 .registrate-aqui {
+  display: flex;
+  height: 264.9894px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch; }
+  .welcome-2 .registrate-aqui h1 {
+    width: 314.1541px;
+    height: 149.1607px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 88.67979px;
+    line-height: 77.3969px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 9.1663px 14.9994px 17.4993px rgba(0, 0, 0, 0.75);
+    align-self: center;
+    margin-right: 26.6656px;
+    text-align-last: right; }
+
+.welcome-2 .user-icon-branch {
+  display: block;
+  margin-top: -7.4997px; }
+
+.welcome-2 .apple-juice {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
+.welcome-3 .wrapper {
+  position: relative;
+  background-image: url("../img/fruit-group.png"), url("../img/background.jpg");
+  background-size: contain, 100% 100%;
+  background-position: center bottom, top center;
+  background-repeat: no-repeat, no-repeat;
+  flex-direction: column; }
+
+.welcome-3 .real-como-santal {
+  position: absolute;
+  top: 58.331px;
+  margin: auto; }
+
+.welcome-3 .selecciona-tu-filtro {
+  display: flex;
+  height: 264.9894px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch; }
+  .welcome-3 .selecciona-tu-filtro h1 {
+    width: 326.6536px;
+    height: 149.1607px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 88.67979px;
+    line-height: 77.3969px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 9.1663px 14.9994px 17.4993px rgba(0, 0, 0, 0.75);
+    align-self: center;
+    margin-right: 26.6656px;
+    text-align-last: right; }
+
+.welcome-3 .image-icon-branch {
+  display: block;
+  margin-top: -7.4997px; }
+
+.welcome-3 .apple-juice {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
+.welcome-4 .wrapper {
+  position: relative;
+  background-image: url("../img/fruit-group.png"), url("../img/background.jpg");
+  background-size: contain, 100% 100%;
+  background-position: center bottom, top center;
+  background-repeat: no-repeat, no-repeat;
+  flex-direction: column; }
+
+.welcome-4 .real-como-santal {
+  position: absolute;
+  top: 58.331px;
+  margin: auto; }
+
+.welcome-4 .tomate-una-selfie {
+  display: flex;
+  height: 264.9894px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch; }
+  .welcome-4 .tomate-una-selfie h1 {
+    width: 299.988px;
+    height: 149.1607px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 88.67979px;
+    line-height: 77.3969px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 9.1663px 14.9994px 17.4993px rgba(0, 0, 0, 0.75);
+    align-self: center;
+    margin-right: 26.6656px;
+    text-align: right;
+    text-align-last: right; }
+
+.welcome-4 .camera-icon-branch {
+  display: block;
+  margin-top: -7.4997px; }
+
+.welcome-4 .apple-juice {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
+.welcome-5 .wrapper {
+  position: relative;
+  background-image: url("../img/fruit-group.png"), url("../img/background.jpg");
+  background-size: contain, 100% 100%;
+  background-position: center bottom, top center;
+  background-repeat: no-repeat, no-repeat;
+  flex-direction: column; }
+
+.welcome-5 .real-como-santal {
+  position: absolute;
+  top: 58.331px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 103.3292px; }
+
+.welcome-5 .compartela-bajo-el-hashtag {
+  margin-top: 103.3292px;
+  display: flex;
+  height: 264.9894px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch; }
+  .welcome-5 .compartela-bajo-el-hashtag h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 88.67979px;
+    line-height: 77.3969px;
+    color: #fff;
+    text-shadow: 9.1663px 14.9994px 17.4993px rgba(0, 0, 0, 0.75);
+    width: 351.6526px;
+    height: 219.9912px;
+    text-transform: uppercase;
+    align-self: center;
+    margin-right: 26.6656px;
+    text-align: right;
+    text-align-last: right; }
+
+.welcome-5 .share-icon-branch {
+  display: block;
+  margin-top: -7.4997px; }
+
+.welcome-5 .hashtag {
+  margin-left: 49.998px;
+  margin-top: 26.6656px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 88.67979px;
+  line-height: 77.3969px;
+  color: #fff;
+  text-shadow: 9.1663px 14.9994px 17.4993px rgba(0, 0, 0, 0.75);
+  align-self: flex-start; }
+
+.welcome-5 .apple-juice {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
+.terminos-y-condiciones .wrapper {
+  flex-direction: column;
+  justify-content: flex-start; }
+
+.terminos-y-condiciones .back-button {
+  position: absolute;
+  align-self: flex-start;
+  margin-top: 51.6646px;
+  margin-left: 54.1645px;
+  width: 90.8297px;
+  height: 90.8297px;
+  border-radius: 50%;
+  background: #fff; }
+
+.terminos-y-condiciones .santal-logo {
+  margin-top: 50.8313px; }
+
+.terminos-y-condiciones h1 {
+  margin-top: 100.8293px;
+  margin-bottom: 31.44041px;
+  width: 265.8227px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 68.3306px;
+  line-height: 59.0643px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 9.1663px 14.9994px 17.4993px rgba(0, 0, 0, 0.75); }
+
+.terminos-y-condiciones p {
+  width: 653.3072px;
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-size: 21.5908px;
+  line-height: 22.72409px;
+  color: #001f5b;
+  text-align: justify;
+  text-align-last: left;
+  margin-top: 22.72409px; }
+
+.gracias-por-compartir .wrapper {
+  flex-direction: column;
+  justify-content: flex-start; }
+
+.gracias-por-compartir .close-button {
+  position: absolute;
+  align-self: flex-start;
+  margin-top: 51.6646px;
+  margin-left: 54.1645px;
+  width: 90.8297px;
+  height: 90.8297px;
+  border-radius: 50%;
+  background: #fff; }
+
+.gracias-por-compartir .mango-and-bg {
+  margin-top: 41.665px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 383.318px;
+  height: 383.318px;
+  background: #25325b;
+  border-radius: 50%; }
+  .gracias-por-compartir .mango-and-bg .branch-window-alt {
+    position: absolute;
+    top: -20.8325px; }
+  .gracias-por-compartir .mango-and-bg .mango-juice {
+    position: absolute;
+    top: 87.4965px; }
+
+.gracias-por-compartir h1 {
+  margin-top: 70.8305px;
+  width: 283.322px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 72.35544px;
+  line-height: 59.0643px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 9.1663px 14.9994px 17.4993px rgba(0, 0, 0, 0.75); }
+
+.gracias-por-compartir .info-box {
+  margin-top: 37.4985px;
+  display: block;
+  width: 685.8059px;
+  height: 540.8117px;
+  background: rgba(37, 50, 91, 0.2);
+  border-radius: 39.9984px;
+  text-align: center;
+  padding: 34.9986px 49.998px 0 49.998px;
+  font-family: 'Raleway', sans-serif;
+  color: #fff; }
+  .gracias-por-compartir .info-box h3 {
+    font-weight: 900;
+    font-size: 34.56528px;
+    color: #25325b;
+    margin-bottom: 29.9988px; }
+  .gracias-por-compartir .info-box p {
+    font-weight: 500;
+    font-size: 34.56528px;
+    line-height: 34.12364px; }
+  .gracias-por-compartir .info-box > h2 {
+    font-weight: 900;
+    font-size: 46.08149px;
+    color: #25325b;
+    margin-bottom: 53.3312px; }
+  .gracias-por-compartir .info-box h6 {
+    font-size: 27.73222px;
+    line-height: 31.31541px; }
+  .gracias-por-compartir .info-box .social-media {
+    margin-top: 23.3324px;
+    display: flex;
+    justify-content: center; }
+    .gracias-por-compartir .info-box .social-media a {
+      margin-right: 18.3326px; }
+      .gracias-por-compartir .info-box .social-media a:nth-child(2) {
+        margin-right: 23.3324px; }
+    .gracias-por-compartir .info-box .social-media h2 {
+      font-family: 'Gotham Black';
+      font-size: 41.78999px;
+      color: #25325b; }
+
+.seleccionar-categoria .wrapper {
+  flex-direction: column;
+  justify-content: flex-start; }
+
+.seleccionar-categoria .back-button {
+  position: absolute;
+  align-self: flex-start;
+  margin-top: 51.6646px;
+  margin-left: 54.1645px;
+  width: 90.8297px;
+  height: 90.8297px;
+  border-radius: 50%;
+  background: #fff; }
+
+.seleccionar-categoria .close-button {
+  position: absolute;
+  align-self: flex-start;
+  margin-top: 166.66px;
+  margin-left: 54.1645px;
+  width: 90.8297px;
+  height: 90.8297px;
+  border-radius: 50%;
+  background: #fff; }
+
+.seleccionar-categoria .santal-logo {
+  margin-top: 50.8313px; }
+
+.seleccionar-categoria h1 {
+  margin-top: 120.8285px;
+  width: 334.1533px;
+  font-family: 'Bebas Neue';
+  font-weight: normal;
+  font-size: 72.35544px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 9.1663px 14.9994px 17.4993px rgba(0, 0, 0, 0.75); }
+
+.seleccionar-categoria .category-group {
+  margin-top: 68.3306px;
+  width: 773.3024px;
+  margin-bottom: 196.6588px; }
+  .seleccionar-categoria .category-group form {
+    display: flex;
+    justify-content: space-between; }
+    .seleccionar-categoria .category-group form div {
+      width: 237.4905px;
+      min-height: 237.4905px; }
+    .seleccionar-categoria .category-group form img {
+      margin: auto;
+      display: block;
+      margin-bottom: 33.332px; }
+    .seleccionar-categoria .category-group form input {
+      display: block;
+      width: 237.4905px;
+      height: 76.6636px;
+      margin: auto;
+      padding: 0;
+      border: 2.16658px solid #25325b;
+      border-radius: 19.1659px;
+      background-color: rgba(236, 237, 237, 0.7);
+      font-family: 'Raleway';
+      font-weight: 900;
+      font-size: 35.22359px;
+      line-height: 38.3318px;
+      text-align: center;
+      color: #25325b;
+      text-transform: uppercase;
+      cursor: pointer; }
+      .seleccionar-categoria .category-group form input:hover {
+        background-color: #25325b;
+        color: #fff;
+        border-color: #25325b; }
+
+.seleccionar-categoria .confirmar-form input {
+  display: block;
+  padding: 0;
+  border: 2.16658px solid #25325b;
+  border-radius: 19.1659px;
+  width: 419.1499px;
+  height: 76.6636px;
+  background: none;
+  font-family: 'Raleway';
+  font-weight: 900;
+  font-size: 35.22359px;
+  line-height: 38.3318px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #25325b;
+  cursor: pointer; }
+  .seleccionar-categoria .confirmar-form input:hover {
+    background-color: #25325b;
+    color: #fff;
+    border-color: #25325b; }
+
+.edad .wrapper {
+  flex-direction: column;
+  justify-content: flex-start; }
+
+.edad .back-button {
+  position: absolute;
+  align-self: flex-start;
+  margin-top: 51.6646px;
+  margin-left: 54.1645px;
+  width: 90.8297px;
+  height: 90.8297px;
+  border-radius: 50%;
+  background: #fff; }
+
+.edad .close-button {
+  position: absolute;
+  align-self: flex-start;
+  margin-top: 166.66px;
+  margin-left: 54.1645px;
+  width: 90.8297px;
+  height: 90.8297px;
+  border-radius: 50%;
+  background: #fff; }
+
+.edad .santal-logo {
+  margin-top: 50.8313px; }
+
+.edad h1 {
+  margin-top: 120.8285px;
+  margin-bottom: 38.3318px;
+  width: 346.6528px;
+  font-family: 'Bebas Neue';
+  font-weight: normal;
+  font-size: 121.12015px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 9.1663px 14.9994px 17.4993px rgba(0, 0, 0, 0.75); }
+
+.edad h5 {
+  margin-bottom: 84.9966px;
+  font-family: 'Raleway';
+  font-weight: 900;
+  font-size: 28.77385px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 9.1663px 14.9994px 17.4993px rgba(0, 0, 0, 0.75); }
+
+.edad .number-form {
+  margin-bottom: 166.66px; }
+  .edad .number-form input {
+    width: 174.1597px;
+    height: 167.4933px;
+    padding: 0;
+    background-color: rgba(236, 237, 237, 0.7);
+    border: 2.16658px solid #25325b;
+    border-radius: 19.9992px;
+    font-family: 'Avenir', sans-serif;
+    font-weight: 900;
+    font-size: 116.662px;
+    color: #25325b;
+    text-align: center; }
+    .edad .number-form input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0; }
+    .edad .number-form input:focus::-webkit-input-placeholder {
+      opacity: 0; }
+    .edad .number-form input::-webkit-input-placeholder {
+      color: #25325b; }
+  .edad .number-form .is-active {
+    background: #25325b;
+    color: #fff; }
+
+.edad .ingresar-form input {
+  display: block;
+  padding: 0;
+  border: 2.16658px solid #25325b;
+  border-radius: 29.9988px;
+  width: 419.1499px;
+  height: 76.6636px;
+  background: #25325b;
+  font-family: 'Raleway';
+  font-weight: 900;
+  font-size: 35.22359px;
+  line-height: 38.3318px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer; }
+  .edad .ingresar-form input:hover {
+    background-color: #86c03f;
+    color: #fff;
+    border-color: #86c03f; }
+
+.ingresa-tus-datos * {
+  box-sizing: border-box; }
+
+.ingresa-tus-datos .wrapper {
+  flex-direction: column;
+  justify-content: flex-start; }
+
+.ingresa-tus-datos .back-button {
+  position: absolute;
+  align-self: flex-start;
+  margin-top: 51.6646px;
+  margin-left: 54.1645px;
+  width: 90.8297px;
+  height: 90.8297px;
+  border-radius: 50%;
+  background: #fff; }
+
+.ingresa-tus-datos .close-button {
+  position: absolute;
+  align-self: flex-start;
+  margin-top: 166.66px;
+  margin-left: 54.1645px;
+  width: 90.8297px;
+  height: 90.8297px;
+  border-radius: 50%;
+  background: #fff; }
+
+.ingresa-tus-datos .santal-logo {
+  margin-top: 50.8313px; }
+
+.ingresa-tus-datos h1 {
+  margin-top: 120.8285px;
+  margin-bottom: 38.3318px;
+  width: 388.3178px;
+  font-family: 'Bebas Neue';
+  font-weight: normal;
+  font-size: 121.12015px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 9.1663px 14.9994px 17.4993px rgba(0, 0, 0, 0.75); }
+
+.ingresa-tus-datos .info-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .ingresa-tus-datos .info-form .control {
+    position: relative; }
+    .ingresa-tus-datos .info-form .control .name-input-icon {
+      background-image: url("../img/name-input-icon.png");
+      background-repeat: no-repeat; }
+    .ingresa-tus-datos .info-form .control .email-input-icon {
+      background-image: url("../img/email-input-icon.png");
+      background-repeat: no-repeat; }
+    .ingresa-tus-datos .info-form .control .id-input-icon {
+      background-image: url("../img/id-input-icon.png");
+      background-repeat: no-repeat; }
+    .ingresa-tus-datos .info-form .control label {
+      position: absolute;
+      top: 19.9992px;
+      left: 29.9988px;
+      width: 32.4987px;
+      height: 32.4987px; }
+    .ingresa-tus-datos .info-form .control input {
+      display: block;
+      background-color: rgba(236, 237, 237, 0.7);
+      width: 419.1499px;
+      height: 76.6636px;
+      padding: 19.9992px 32.4987px 19.9992px 97.4961px;
+      margin-bottom: 53.3312px;
+      background-color: rgba(236, 237, 237, 0.7);
+      border: 2.16658px solid #25325b;
+      border-radius: 19.9992px;
+      font-family: 'Avenir', sans-serif;
+      font-weight: 900;
+      font-size: 29.05717px;
+      line-height: 32.4987px;
+      color: #25325b; }
+      .ingresa-tus-datos .info-form .control input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0; }
+      .ingresa-tus-datos .info-form .control input::placeholder {
+        color: #25325b; }
+    .ingresa-tus-datos .info-form .control .is-active {
+      background: #25325b;
+      color: #fff; }
+  .ingresa-tus-datos .info-form .terms-and-conditions-control {
+    width: 557.4777px;
+    margin-bottom: 52.4979px; }
+    .ingresa-tus-datos .info-form .terms-and-conditions-control input {
+      display: none; }
+    .ingresa-tus-datos .info-form .terms-and-conditions-control label {
+      display: block;
+      font-family: 'Raleway';
+      font-weight: 500;
+      font-size: 21.5908px;
+      line-height: 22.72409px;
+      text-align: justify;
+      text-align-last: left;
+      color: #25325b; }
+      .ingresa-tus-datos .info-form .terms-and-conditions-control label div {
+        margin-left: 87.4965px;
+        width: 404.9838px; }
+      .ingresa-tus-datos .info-form .terms-and-conditions-control label a {
+        font-weight: 800;
+        text-decoration: none;
+        color: #25325b; }
+    .ingresa-tus-datos .info-form .terms-and-conditions-control span {
+      display: inline-block;
+      float: left;
+      width: 45.8315px;
+      height: 45.8315px;
+      margin: -1.6666px 8.333px 0 0;
+      vertical-align: middle;
+      background: url("../img/checkbox.png") left top no-repeat;
+      cursor: pointer; }
+    .ingresa-tus-datos .info-form .terms-and-conditions-control input[type="checkbox"]:checked + label span {
+      background: url("../img/checkbox-checked.png") left top no-repeat; }
+  .ingresa-tus-datos .info-form .submit-input {
+    display: block;
+    background-color: rgba(236, 237, 237, 0.7);
+    width: 419.1499px;
+    height: 76.6636px;
+    padding: 24.999px auto 24.999px auto;
+    margin-bottom: 53.3312px;
+    background-color: transparent;
+    border: 2.16658px solid #25325b;
+    border-radius: 19.9992px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 35.22359px;
+    line-height: 38.2318px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer; }
+    .ingresa-tus-datos .info-form .submit-input:hover {
+      background-color: #86c03f;
+      color: #fff;
+      border-color: #86c03f; }
+
+.camera .wrapper {
+  position: relative;
+  background-image: url("../img/background.jpg");
+  background-size: 100% 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: flex-start; }
+
+.camera .back-button {
+  position: absolute;
+  align-self: flex-start;
+  margin-top: 51.6646px;
+  margin-left: 54.1645px;
+  width: 90.8297px;
+  height: 90.8297px;
+  border-radius: 50%;
+  background: #fff; }
+
+.camera .close-button {
+  position: absolute;
+  align-self: flex-start;
+  margin-top: 166.66px;
+  margin-left: 54.1645px;
+  width: 90.8297px;
+  height: 90.8297px;
+  border-radius: 50%;
+  background: #fff; }
+
+.camera .real-como-santal {
+  margin-top: 74.997px; }
+
+/*# sourceMappingURL=main.css.map */

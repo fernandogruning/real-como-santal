@@ -1,0 +1,74 @@
+.welcome-5 {
+	.wrapper {
+		position: relative;
+		background-image: url('../img/fruit-group.png'), url('../img/background.jpg');
+		background-size: contain, 100% 100%;
+		background-position: center bottom, top center;
+		background-repeat: no-repeat, no-repeat;
+
+		flex-direction: column;
+	}
+
+	.real-como-santal {
+		position: absolute;
+		top: (70px * $ratio);
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 124px * $ratio;
+	}
+
+	.compartela-bajo-el-hashtag {
+		margin-top: 124px * $ratio;
+		display: flex;
+		height: 318px * $ratio;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-content: stretch;
+
+		h1 {
+			font-family: 'Bebas Neue', sans-serif;
+			font-size: 106.42px * $ratio;
+			line-height: 92.88px * $ratio;
+			color: #fff;
+			text-shadow: (11px * $ratio) (18px * $ratio) (21px * $ratio) rgba(0, 0, 0, 0.75);
+			
+			// border: 1px * $ratio solid;
+			width: 422px * $ratio;//675px * $ratio;
+			height: 264px * $ratio; //260px * $ratio;
+			text-transform: uppercase;
+
+			align-self: center;
+
+			margin-right: 32px * $ratio;
+			text-align: right;
+			text-align-last: right;
+		}
+	}
+
+	.share-icon-branch {
+		display: block;
+		margin-top: -9px * $ratio;
+	}
+
+	.hashtag {
+		// position: relative;
+		// left: 0px;
+		// bottom: 394px;
+		margin-left: 60px * $ratio;
+		margin-top: 32px * $ratio;
+		font-family: 'Bebas Neue', sans-serif;
+		font-size: 106.42px * $ratio;
+		line-height: 92.88px * $ratio;
+		color: #fff;
+		text-shadow: (11px * $ratio) (18px * $ratio) (21px * $ratio) rgba(0, 0, 0, 0.75);
+		align-self: flex-start;
+	}
+
+	.apple-juice {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+
+}
