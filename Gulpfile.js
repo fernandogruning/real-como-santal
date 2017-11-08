@@ -23,3 +23,7 @@ gulp.task('serve',['sass'], function() {
 	gulp.watch('src/css/*.scss', ['sass']).on('change', reload);
 	gulp.watch('src/*.html').on('change', reload);
 });
+
+gulp.task('watch', function() {
+	gulp.watch('src/css/*.scss', ['sass']);
+});
