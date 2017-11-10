@@ -2,8 +2,11 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const bodyParser = require("body-parser");
+const multer = require('multer')
 
 const port = process.env.PORT || 8000;
+
+const multipart = multer()
 
 app.use(express.static("src"));
 
@@ -39,6 +42,11 @@ app.get("/camera", (req, res) => {
 
 app.get('/editor', (req, res) => {
   res.render('editor')
+})
+
+app.post('/webhook', multipart.array(), (req, res) => {
+  console.log(req.body)
+  res.send(req.body)
 })
 
 app.listen(port, () =>

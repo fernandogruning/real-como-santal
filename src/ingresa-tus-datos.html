@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Real como Santal</title>
-		<link rel="stylesheet" href="./css/main.css">
-	</head>
-	<body class="ingresa-tus-datos">
-		<div class="wrapper">
-			<a href="edad.html" class="back-button"><img src="img/back-button.png" alt=""></a>
-			<a href="welcome-1.html" class="close-button"><img src="img/close-button.png" alt=""></a>
-			<img class="santal-logo" src="img/santal-logo.png">
 
-			<h1>Ingresa tus datos</h1>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Real como Santal</title>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
 
-			<form class="info-form" action="">
+<body class="ingresa-tus-datos">
+	<div class="wrapper">
+		<a href="edad.html" class="back-button">
+			<img src="img/back-button.png" alt="">
+		</a>
+		<a href="welcome-1.html" class="close-button">
+			<img src="img/close-button.png" alt="">
+		</a>
+		<img class="santal-logo" src="img/santal-logo.png">
+
+		<h1>Ingresa tus datos</h1>
+
+		<!-- <form class="info-form" action="">
 				<div class="control">
 					<label class="email-input-icon" for="email-input"></label>
 					<input id="email-input" type="email" placeholder="email" required>
@@ -31,34 +37,85 @@
 					<input id="terms-and-conditions-input" type="checkbox"><label for="terms-and-conditions-input"><span></span><div>Al registrarse, acepta los <a href="terminos-y-condiciones.html">términos y condiciones</a> de Santal y sus políticas de privacidad</div></label>
 				</div>
 				<input class="submit-input" id="submit-input" type="submit" value="Registrarse">
-			</form>
-		</div>
-		
-		<script>
-			const inputs = document.querySelectorAll(".control input");
+			</form> -->
 
-			const isNotEmpty = (elem) => {
-				if (elem.value !== '') {
-					return true;
+		<iframe id="JotFormIFrame-72976743384875" onload="window.parent.scrollTo(0,0)" allowtransparency="true" src="https://form.jotform.co/72976743384875"
+		 frameborder="0" style="width: 1px;
+	      min-width: 100%;
+	      height:539px;
+	      border:none;" scrolling="no">
+		</iframe>
+		<script type="text/javascript">
+			var ifr = document.getElementById("JotFormIFrame-72976743384875");
+			if (window.location.href && window.location.href.indexOf("?") > -1) {
+				var get = window.location.href.substr(window.location.href.indexOf("?") + 1);
+				if (ifr && get.length > 0) {
+					var src = ifr.src;
+					src = src.indexOf("?") > -1 ? src + "&" + get : src + "?" + get;
+					ifr.src = src;
 				}
 			}
-
-			inputs.forEach( listObj => {	
-				listObj.onkeyup = function(e) {
-					listObj.classList.toggle('is-active', isNotEmpty(listObj));
+			window.handleIFrameMessage = function (e) {
+				var args = e.data.split(":");
+				if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[2]); } else { iframe = document.getElementById("JotFormIFrame"); }
+				if (!iframe)
+					return;
+				switch (args[0]) {
+					case "scrollIntoView":
+						iframe.scrollIntoView();
+						break;
+					case "setHeight":
+						iframe.style.height = args[1] + "px";
+						break;
+					case "collapseErrorPage":
+						if (iframe.clientHeight > window.innerHeight) {
+							iframe.style.height = window.innerHeight + "px";
+						}
+						break;
+					case "reloadPage":
+						window.location.reload();
+						break;
 				}
-			});
-
-		</script>
-
-		<!-- SOLO PARA FINES DE DEMO -->
-		<script>
-			const submitInput = document.querySelector(".submit-input");
-
-			submitInput.onclick = (e) => {
-				e.preventDefault();
-				window.location.assign('seleccionar-categoria.html');
+				var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+				if (isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+					var urls = { "docurl": encodeURIComponent(document.URL), "referrer": encodeURIComponent(document.referrer) };
+					iframe.contentWindow.postMessage(JSON.stringify({ "type": "urls", "value": urls }), "*");
+				}
+			};
+			if (window.addEventListener) {
+				window.addEventListener("message", handleIFrameMessage, false);
+			} else if (window.attachEvent) {
+				window.attachEvent("onmessage", handleIFrameMessage);
 			}
 		</script>
-	</body>
+	</div>
+
+	<script>
+		const inputs = document.querySelectorAll(".control input");
+
+		const isNotEmpty = (elem) => {
+			if (elem.value !== '') {
+				return true;
+			}
+		}
+
+		inputs.forEach(listObj => {
+			listObj.onkeyup = function (e) {
+				listObj.classList.toggle('is-active', isNotEmpty(listObj));
+			}
+		});
+
+	</script>
+
+	<!-- SOLO PARA FINES DE DEMO -->
+	<script>
+		const submitInput = document.querySelector(".submit-input");
+
+		submitInput.onclick = (e) => {
+			e.preventDefault();
+			window.location.assign('seleccionar-categoria.html');
+		}
+	</script>
+</body>
+
 </html>
