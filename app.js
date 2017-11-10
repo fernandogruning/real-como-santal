@@ -45,8 +45,8 @@ app.get('/editor', (req, res) => {
 })
 
 app.post('/webhook', multipart.array(), (req, res) => {
-  console.log(req.body.rawRequest["q8_user-age"])
-  res.send(req.body.rawRequest["q8_user-age"])
+  console.log(req.body)
+  res.send(req.body)
 })
 
 app.listen(port, () =>
