@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title Real Como Santal
+		link(rel='stylesheet', href='./css/main.css')
+	body.editor
+		.wrapper
+			a.back-button(href='edad.html')
+				img(src='img/back-button.png', alt='Atrás')
+			a.close-button(href='welcome-1.html')
+				img(src='img/close-button.png', alt='Cerrar')
+			img.real-como-santal(src='img/real-como-santal.png', alt='Real Como Santal')
+			iframe(src="./pixie/index.html", frameborder="0").editor-iframe
+			input(type="button", value="Continuar").continue

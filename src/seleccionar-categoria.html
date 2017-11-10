@@ -16,35 +16,45 @@
 			<h1>Seleccionar Categor&iacute;a</h1>
 
 			<div class="category-group">
-				<form action="">
+				<form action="/camera" method="post">
 					<div class="personal-group">
-						<label for="personal-group-input"><img src="img/personal-group-icon.png" alt=""></label>
-						<input id="personal-group-input" type="button" value="Personal">
+						<input id="personal-group-input" name="category" type="radio" value="Personal" checked>
+						<label for="personal-group-input">
+							<img src="img/personal-group-icon.png" alt="Personal">
+							<span>Personal</span>
+						</label>
 					</div>
 					<div class="couple-group">
-						<label for="couple-group-input"><img src="img/couple-group-icon.png" alt=""></label>
-						<input id="couple-group-input" type="button" value="Pareja">
+						<input id="couple-group-input" name="category" type="radio" value="Pareja">
+						<label for="couple-group-input">
+							<img src="img/couple-group-icon.png" alt="Pareja">
+							<span>Pareja</span>
+						</label>
 					</div>
 					<div class="familiar-group">
-						<label for="familiar-group-input"><img src="img/familiar-group-icon.png" alt=""></label>
-						<input id="familiar-group-input" type="button" value="Familiar">
+						<input id="familiar-group-input" name="category" type="radio" value="Familiar">
+						<label for="familiar-group-input">
+							<img src="img/familiar-group-icon.png" alt="Familia">
+							<span>Familiar</span>
+						</label>
 					</div>
+
+					<input type="submit" value="Confirmar">
 				</form>
 			</div>
 
-			<form class="confirmar-form" action="">
-				<input type="submit" value="Confirmar">
-			</form>
+			<!-- <form class="confirmar-form" action="">
+			</form> -->
 		</div>
 
 		<!-- SOLO PARA FINES DE DEMO -->
 		<script>
-			const submitInput = document.querySelector("input[type=\"submit\"");
+			// const submitInput = document.querySelector("input[type=\"submit\"");
 
-			submitInput.onclick = (e) => {
-				e.preventDefault();
-				window.location.assign('camera.html');
-			}
+			// submitInput.onclick = (e) => {
+			// 	e.preventDefault();
+			// 	window.location.assign('camera.html');
+			// }
 		</script>
 	</body>
 </html>

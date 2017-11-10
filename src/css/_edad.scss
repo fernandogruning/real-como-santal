@@ -53,15 +53,18 @@
 	}
 
 	.number-form {
-		margin-bottom: 200px * $ratio;
 
-		input {
+		#number-input {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
 			width: 209px * $ratio;
 			height: 201px * $ratio;
 			padding: 0;
 			background-color: rgba(#eceded,0.70);
 			border: 2.6px * $ratio solid $brand-color;
 			border-radius: 24px * $ratio;
+			margin-bottom: 200px * $ratio;
 			font-family: 'Avenir', sans-serif;
 			font-weight: 900;
 			font-size: 140px * $ratio;
@@ -88,29 +91,32 @@
 			background: $brand-color;
 			color: #fff;
 		}
-	}
 
-	.ingresar-form input {
-		display: block;
-		padding: 0;
-		border: 2.6px * $ratio solid $brand-color;
-		border-radius: 24px * $ratio * 1.5;
-		width: 503px * $ratio;
-		height: 92px * $ratio;
-		background: $brand-color;
-		font-family: 'Raleway';
-		font-weight: 900;
-		font-size: 42.27px * $ratio;
-		line-height: 46px * $ratio;
-		text-align: center;
-		text-transform: uppercase;
-		color: #fff;
-		cursor: pointer;
-
-		&:hover {
-			background-color: $brand-color-alt;
+		input[type=submit] {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 0;
+			border: 2.6px * $ratio solid $brand-color;
+			border-radius: 24px * $ratio * 1.5;
+			width: 503px * $ratio;
+			height: 92px * $ratio;
+			background: $brand-color;
+			font-family: 'Raleway';
+			font-weight: 900;
+			font-size: 42.27px * $ratio;
+			line-height: 46px * $ratio;
+			text-align: center;
+			text-transform: uppercase;
 			color: #fff;
-			border-color: $brand-color-alt;
+			cursor: pointer;
+
+			&:hover {
+				background-color: $brand-color-alt;
+				color: #fff;
+				border-color: $brand-color-alt;
+			}
 		}
 	}
+
 }

@@ -37,6 +37,10 @@ app.get("/camera", (req, res) => {
   console.log('get')
 })
 
+app.get('/editor', (req, res) => {
+  res.render('editor')
+})
+
 app.listen(port, () =>
   console.log(`Our App is running on http://localhost:${port}`)
 );

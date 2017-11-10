@@ -1,4 +1,4 @@
-.camera {
+.editor {
 	.wrapper {
 		position: relative;
 		background-image: url('../img/background.jpg');
@@ -37,73 +37,14 @@
 		margin-top: 90px * $ratio;
 	}
 
-
-	.camera-frame {
-		$width: 557px;
-		$height: 417px;
-		position: relative;
+	.editor-iframe {
 		width: $width;
-		height: $height;
-		margin-top: 120px;
-		background-color: #241f20;
-		border-radius: 32px;
-
-		overflow: hidden;
-
-		.fotografia {
-			width: 100%;
-			height: 100%;
-		}
-	}
-
-	.shutter {
-		$size: 80px;
-
-		display: block;
-		position: absolute;
-		left: 50%;
-		bottom: 16px;
-		margin-left: -($size/2);
-		width: $size;
-		height: $size;
-		background-color: #ffffff;
-		border-radius: 50%;
-		cursor: pointer;
-		z-index: 9999;
-
-		i {
-			display: block;
-			font-size: $size / 2;
-			color: $brand-color;
-			text-align: center;
-			line-height: $size;
-		}
-	}
-
-	.reset {
-		@extend .shutter;
-		display: none;
-	}
-
-	.download {
-		@extend .shutter;
-		$size: 60px;
-
-		display: none;
-		width: $size;
-		height: $size;
-		margin-top: $size / 6;
-		margin-bottom: $size / 6;
-		margin-left: 48px;
-
-		i {
-			font-size: $size / 2;
-			line-height: $size;
-		}
+		min-height: $width / 1.777777778;
+		margin-top: 128px;
 	}
 
 	.continue {
-		display: none;
+		display: block;
 		margin-top: 32px;
 		margin-left: auto;
 		margin-right: auto;

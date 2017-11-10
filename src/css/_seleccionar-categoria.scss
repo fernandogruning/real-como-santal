@@ -41,18 +41,18 @@
 		text-shadow: 11px * $ratio 18px * $ratio 21px * $ratio rgba(0, 0, 0, 0.75);
 
 	}
-	
+
 	.category-group {
 		margin-top: 82px * $ratio;
 		width: 928px * $ratio;
-		margin-bottom: 236px * $ratio;
 
 		form {
 			display: flex;
 			justify-content: space-between;
+			flex-wrap: wrap;
 
 			div {
-				width: 285px * $ratio;
+				min-width: 285px * $ratio;
 				min-height: 285px * $ratio;
 			}
 
@@ -61,11 +61,24 @@
 				display: block;
 				margin-bottom: 40px * $ratio;
 			}
-			
-			input {
+
+			input[type=radio] {
+				display: none;
+			}
+
+			input[type=radio]:checked + label span {
+				background-color: $brand-color;
+				color: #fff;
+				border-color: $brand-color;
+			}
+
+			label span {
+				$width: 285px * $ratio;
+				$height: 92px * $ratio;
+
 				display: block;
-				width: 285px * $ratio;
-				height: 92px * $ratio;
+				width: $width;
+				height: $height;
 				margin: auto;
 				padding: 0;
 				border: 2.6px * $ratio solid $brand-color;
@@ -74,11 +87,11 @@
 				font-family: 'Raleway';
 				font-weight: 900;
 				font-size: 42.27px * $ratio;
-				line-height: 46px * $ratio;
+				line-height: $height;
 				text-align: center;
 				color: $brand-color;
 				text-transform: uppercase;
-				cursor: pointer;;
+				cursor: pointer;
 
 				&:hover {
 					background-color: $brand-color;
@@ -88,29 +101,31 @@
 			}
 		}
 
-	}
+		input[type=submit] {
+			display: block;
+			margin-top: 236px * $ratio;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 0;
+			border: 2.6px * $ratio solid $brand-color;
+			border-radius: 23px * $ratio;
+			width: 503px * $ratio;
+			height: 92px * $ratio;
+			background: none;
+			font-family: 'Raleway';
+			font-weight: 900;
+			font-size: 42.27px * $ratio;
+			line-height: 46px * $ratio;
+			text-align: center;
+			text-transform: uppercase;
+			color: $brand-color;
+			cursor: pointer;
 
-	.confirmar-form input {
-		display: block;
-		padding: 0;
-		border: 2.6px * $ratio solid $brand-color;
-		border-radius: 23px * $ratio;
-		width: 503px * $ratio;
-		height: 92px * $ratio;
-		background: none;
-		font-family: 'Raleway';
-		font-weight: 900;
-		font-size: 42.27px * $ratio;
-		line-height: 46px * $ratio;
-		text-align: center;
-		text-transform: uppercase;
-		color: $brand-color;
-		cursor: pointer;
-
-		&:hover {
-			background-color: $brand-color;
-			color: #fff;
-			border-color: $brand-color;
+			&:hover {
+				background-color: $brand-color;
+				color: #fff;
+				border-color: $brand-color;
+			}
 		}
 	}
 }

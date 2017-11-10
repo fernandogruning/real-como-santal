@@ -16,13 +16,9 @@
 
 			<h5>Para acceder debes ser mayor de 18 a&ntilde;os</h5>
 
-			<form class="number-form" action="">
-				<input id="number-input" type="number" min="01" max="99" placeholder="00" required>
-			</form>
+			<form class="number-form" action="/edad" method="post">
+				<input id="number-input" name="number-input" type="number" min="18" max="99" placeholder="00" required="required">
 
-			<h4 id="thx" style="display: none">Thx</h4>
-
-			<form class="ingresar-form" action="">
 				<input type="submit" value="Ingresar">
 			</form>
 		</div>
@@ -58,13 +54,13 @@
 		</script>
 
 		<!-- SOLO PARA FINES DE DEMO -->
-		<script>
+		<!-- <script>
 			const submitInput = document.querySelector("input[type=\"submit\"");
 
 			submitInput.onclick = (e) => {
 				e.preventDefault();
 				window.location.assign('ingresa-tus-datos.html');
 			}
-		</script>
+		</script> -->
 	</body>
 </html>

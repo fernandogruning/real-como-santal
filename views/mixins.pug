@@ -1,0 +1,79 @@
+mixin script(param)
+    script(src='js/say-cheese.js')
+    script.
+        const width = 557;
+        const height = 417;
+        var img;
+        const sayCheese = new SayCheese(".camera-frame", {
+            snapshots: true,
+            width: width,
+            height: height
+        });
+
+        sayCheese.start();
+
+        const shutter = document.querySelector('#shutter')
+        const reset = document.querySelector('#reset')
+        const download = document.querySelector('#download')
+        const continueBtn = document.querySelector('.continue')
+        const finalPhoto = document.querySelector('.final-photo')
+
+        shutter.addEventListener('click', function(e) {
+            e.preventDefault();
+            sayCheese.takeSnapshot(width, height)
+
+            this.style.display = 'none'
+            reset.style.display = 'block'
+            download.style.display = 'block'
+        })
+
+        reset.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            finalPhoto.style.display = 'none'
+            this.style.display = 'none'
+            download.style.display = 'none'
+            shutter.style.display = 'block'
+        })
+
+        download.addEventListener('click', function(e) {
+            this.download = 'image.png'
+
+            continueBtn.style.display = 'block'
+        })
+
+        continueBtn.addEventListener('click', function(e) {
+            window.location.replace('editor')
+        })
+
+        sayCheese.on('snapshot', function(snapshot) {
+            img = document.createElement('img');
+
+            img.src = snapshot.toDataURL('image/png');
+
+            var nloaded = 0;
+            function checkload(event) {
+                nloaded++;
+                if (nloaded < 1) {
+                    return;
+                }
+
+                var canvas = document.querySelector('canvas')
+                var context = canvas.getContext('2d')
+
+
+                context.drawImage(webcamImage, 0, 0);
+
+                canvas.toBlob(function(blob) {
+                    var url = URL.createObjectURL(blob)
+
+                    finalPhoto.src = url
+                    download.href = url
+                })
+                finalPhoto.style = 'display: block; position: absolute; top: 0; left: 0;';
+            }
+
+            var webcamImage = new Image;
+            webcamImage.onload = checkload;
+            webcamImage.src = img.src;
+        });
