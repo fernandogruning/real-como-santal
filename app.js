@@ -45,8 +45,8 @@ app.get('/editor', (req, res) => {
 })
 
 app.post('/webhook', multipart.array(), (req, res) => {
-  console.log(req.body)
-  res.send(req.body)
+  console.log(req.body.rawRequest)
+  res.send(req.body.rawRequest)
 })
 
 app.listen(port, () =>
